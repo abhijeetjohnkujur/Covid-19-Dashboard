@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Layout from '../components/Layout'
 function index() {
   return (
-    <>
-     <h1>COVID 19 DASHBOARD</h1> 
-    </>
+    <Layout>
+    
+     
+    </Layout>
   )
 }
 

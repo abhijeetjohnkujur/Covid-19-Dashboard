@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Red+Hat+Display:wght@700&display=swap');
+
+.headerFont
+{
+    font-family: 'Red Hat Display';
+    font-size: 19px;
+    /*line-height: 25.14px;*/
+    color:hsla(179, 93%, 18%, 1);
+}
+
+.navLinks
+{
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 17px;
+    /*line-height: 21.59;*/
+    color:hsla(179, 93%, 18%, 1);
+    padding-right: 0.9em;
+}
+
+.navOverview
+{
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 17px;
+    /*line-height: 21.59;*/
+    color: #FB4C47;
+    padding-right: 0.9em;
+}
+.navContact
+{
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    /*line-height: 21.59;*/
+    color: #FB4C47;
+    box-sizing: border-box;
+}
+
+.navConContainer
+{
+    border-radius: 46px;
+    border: 2px solid #FB4C47;
+    width: 154px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+}
+
+.navigator
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.navigatorBox
+{
+    display: flex;
+    /*border: 2px solid black;*/
+    justify-content: center;
+    align-items: center;
+    margin-right: 15em;
+}
+.overDot
+{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: tomato;
+    position: absolute;
+    right: 45.2em;
+    margin-top: 0.4em;
+}
