@@ -4,6 +4,7 @@ module.exports = {
     title: "Covid 19 Dashboard",
   },
   plugins: [
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
