@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Red+Hat+Display:wght@700&display=swap');
+.main
+{
+    border: 2px solid black;
+    display: flex;
+    margin-top: 0.2em;
+}
+
+.leftInfo
+{
+    border: 2px solid red;
+    max-width: 100vw;
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    margin-left: 11em;
+    margin-top: 8em;
+    
+}
+
+.leftInfoData
+{
+    border: 2px solid green;
+    margin: 0 4em 0 4em;
+}
+
+.title {
+    font-family: 'Red Hat Display';
+    color: #FB4C47;
+    font-size: 32px;
+    border: 2px solid black;
+}
+
+.subtitle {
+    font-family: 'Red Hat Display';
+    color:hsla(179, 93%, 18%, 1);
+    font-size: 57px;
+    border: 2px solid black;
+    max-width: 38vw;
+}
+
+.para
+{
+    font-family: Helvetica;
+    color:hsla(194, 3%, 31%, 1);
+    font-size: 24.6px;
+    margin-top: 2em;
+    font-weight: 500;
+    max-width: 36vw;
+    border: 2px solid black;
+}
+
+.help
+{
+    color: white;
+    padding: 1em;
+    border: 2px solid #FB4C47;
+    background-color: #FB4C47;
+    font-family: Helvetica;
+    display: grid;
+    place-items: center;
+    border-radius: 65px;
+    max-width: 10vw;
+    margin-top: 1em;
+}
