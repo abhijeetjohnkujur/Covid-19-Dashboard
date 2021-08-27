@@ -52,7 +52,6 @@
 
 .help
 {
-    color: white;
     padding: 1em;
     border: 2px solid #FB4C47;
     background-color: #FB4C47;
@@ -62,4 +61,5 @@
     border-radius: 65px;
     max-width: 10vw;
     margin-top: 1em;
+    text-decoration: none;
 }

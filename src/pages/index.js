@@ -21,7 +21,9 @@ export default function index({ data }) {
         <div className={styles.title}>{sitedata[0].frontmatter.title}</div>
         <div className={styles.subtitle}>{sitedata[0].frontmatter.subtitle}</div>
         <div className={styles.para}>{sitedata[0].frontmatter.paragraph}</div>
-        <div className={styles.help}><Link >Let Us Help</Link></div>
+        <div className={styles.help}>  
+        <Link to="/Help" style={{color:'white'}}>Let Us Help</Link>
+        </div>
         </div>
       </div>
 
