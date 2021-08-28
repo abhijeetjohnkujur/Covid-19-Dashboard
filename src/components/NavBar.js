@@ -1,12 +1,19 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import * as stylesNav from '../styles/nav.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 export default function NavBar() {
     return (
         <nav className={stylesNav.navigator}>
-            <div style={{
-                marginLeft: '18em'
-            }}>
+            <div className={stylesNav.headbox}>
+                <StaticImage 
+                src="../images/corona_virus.svg"
+                width={40.56}
+                alt="Virus"
+                style={{marginRight:'0.8em'}}
+                placeholder="tracedSVG"
+                quality="80"
+                />
             <h1 className={stylesNav.headerFont}>COVID-19</h1>
             </div>
             
@@ -26,3 +33,5 @@ export default function NavBar() {
         </nav>
     )
 }
+
+

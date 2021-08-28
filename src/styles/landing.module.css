@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Red+Hat+Display:wght@700&display=swap');
+
+/*FOR LAPTOPS AND DESKATOP SCREENS*/
+    @media (min-width: 1024px) and (max-width:1920px){
+
+    
+
 .main
 {
     border: 2px solid black;
     display: flex;
     margin-top: 0.2em;
+    position: relative;
 }
 
 .leftInfo
@@ -13,15 +20,19 @@
     height: 60vh;
     display: grid;
     place-items: center;
-    margin-left: 11em;
-    margin-top: 8em;
+    margin-left: 4em;
+    margin-top: 13em;
     
 }
 
 .leftInfoData
 {
     border: 2px solid green;
-    margin: 0 4em 0 4em;
+    position: relative;
+    left: 24%;
+    top: 2%;
+    
+    
 }
 
 .title {
@@ -48,6 +59,7 @@
     font-weight: 500;
     max-width: 36vw;
     border: 2px solid black;
+    line-height: 1.5em;
 }
 
 .help
@@ -63,3 +75,208 @@
     margin-top: 1em;
     text-decoration: none;
 }
+
+.pic
+{
+    border: 2px solid red;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 58vw;
+}
+.picdata
+{
+    position: absolute;
+    left: 11%;
+    top: 15%;
+    width: 170px;
+    height: 193px;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+}
+.picdata2
+{
+    position: absolute;
+    width: 860px;
+    right: 0;
+}
+
+.picdata3
+{
+    position: absolute;
+    right: 0;
+}
+
+.secondMain
+{
+    display: flex;
+    border: 2px solid rebeccapurple;
+}
+
+.leftImage
+{
+    display: flex;
+    position: relative;
+    margin-left: 15em;
+    margin-right: 14em;
+}
+
+.leftImage1
+{
+    width: 28vw;
+    position: relative;
+    right: -20%;
+}
+
+.leftImage2
+{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 15vw;
+
+}
+
+.coronaInfo
+{
+    border: 2px solid black;
+    width: 44.2vw;
+    position: relative;
+    
+    
+}
+
+.coronaInfoData
+{
+    border: 2px solid red;
+    width: 44vw;
+    margin: 8em 0 0 0;
+}
+
+.titles {
+    font-family: 'Red Hat Display';
+    color: #FB4C47;
+    font-size: 28px;
+    border: 2px solid black;
+}
+
+.paras
+{
+    font-family: Helvetica;
+    color:hsla(194, 3%, 31%, 1);
+    font-size: 24.6px;
+    margin-top: 2em;
+    font-weight: 500;
+    max-width: 42vw;
+    border: 2px solid black;
+    line-height: 1.5em;
+}
+
+.learnMore
+{
+    background-color: rgba(250, 86, 82, 0.15);
+    padding: 1em;
+    font-family: Helvetica;
+    display: grid;
+    place-items: center;
+    border-radius: 65px;
+    max-width: 10vw;
+    margin-top: 1.8em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.coronaLight {
+    border: 2px solid red;
+    position: absolute;
+    right: 0;
+    bottom: -60%;
+    width: 12vw;
+}
+
+.contaParent{
+    display: flex;
+    border: 2px solid yellow;
+    flex-direction: column;
+    margin-top: 14em;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+   
+}
+
+.contaCards
+{
+    border: 2px solid green;
+    display: flex;
+    
+    width: 70vw;
+}
+
+.contaCards1 
+{
+    width: 460px;
+    height: 575px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 6em;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 35px 87px rgba(0,0,0,0.11);
+    z-index: 1000;
+}
+
+.contaCards2{
+    width: 460px;
+    height: 575px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    box-shadow: 0px 35px 80px rgba(0,0,0,0.08);
+}
+
+.contaCards3{
+    width: 460px;
+    height: 575px;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 6em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 35px 80px rgba(0,0,0,0.08);
+    
+}
+
+.tst
+{
+    border: 2px solid black;
+    margin-top: 4em;
+}
+
+.lightcorona{
+  
+    border: 2px solid black;
+    position: absolute;
+    width: 131px;
+    top:-7%;
+    right:2%;
+}
+
+.lightdarkcorona
+{
+    border: 2px solid black;
+    position: absolute;
+    left: 7.6%;
+    bottom: 1.2%;
+    z-index: 1;
+}
+    }
+

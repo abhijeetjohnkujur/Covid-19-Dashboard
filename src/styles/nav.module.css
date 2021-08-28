@@ -74,3 +74,11 @@
     right: 45.2em;
     margin-top: 0.4em;
 }
+.headbox
+{
+    margin-left:15.3em;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
