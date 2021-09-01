@@ -1,6 +1,6 @@
-<img src="../covid-19-dashboard/src/screenshots/covidblue.png"></img>
 
 
+![](src/screenshots/covidblue.png)
 <h1> Documentataion: </h1>
 <hr />
 
