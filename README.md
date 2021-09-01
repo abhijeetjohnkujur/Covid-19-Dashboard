@@ -125,6 +125,7 @@
 <h2 id="dp">Deployment and Live link</h2>
 
 <h6>For deployment the web app is first pushed to Github and then its being deployed to netlify free hosting service</h6>
+<a href="https://covid-19-dashboard-bsa.netlify.app/ "><h6> <b>Click here for the Live link </b></h6></a>
 
 <hr />
 
