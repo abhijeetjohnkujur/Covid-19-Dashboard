@@ -20,9 +20,9 @@ export default function index({ data }) {
     {/* Left Info */}
       <div className={styles.leftInfo}>
         <div className={styles.leftInfoData}>
-        <div className={styles.title}>{sitedata[3].frontmatter.title}</div>
-        <div className={styles.subtitle}>{sitedata[3].frontmatter.subtitle}</div>
-        <div className={styles.para}>{sitedata[3].frontmatter.paragraph}</div>
+        <div className={styles.title}>{sitedata[2].frontmatter.title}</div>
+        <div className={styles.subtitle}>{sitedata[2].frontmatter.subtitle}</div>
+        <div className={styles.para}>{sitedata[2].frontmatter.paragraph}</div>
         <div className={styles.help}>  
         <Link to="/Help" style={{color:'white'}}>Let Us Help</Link>
         </div>
@@ -86,9 +86,9 @@ export default function index({ data }) {
 
       <div className={styles.coronaInfo}>
         <div className={styles.coronaInfoData}>
-            <div className={styles.titles}>{sitedata[2].frontmatter.title}</div>
-            <div className={styles.subtitle}>{sitedata[2].frontmatter.subtitle}</div>
-            <div className={styles.paras}>{sitedata[2].frontmatter.paragraph}</div>
+            <div className={styles.titles}>{sitedata[1].frontmatter.title}</div>
+            <div className={styles.subtitle}>{sitedata[1].frontmatter.subtitle}</div>
+            <div className={styles.paras}>{sitedata[1].frontmatter.paragraph}</div>
             <div className={styles.learnMore}>
            <Link to='/learnmore' style={{color: 'rgba(250,86,82,1)'}}> Learn More</Link>
            </div>
@@ -193,15 +193,15 @@ export default function index({ data }) {
     <div className={styles.sympparent}>
 
             <div className={`${styles.titles}  ${styles.motitles}`} style={{marginBottom:'2em'}}>
-            {sitedata[4].frontmatter.title}
+            {sitedata[3].frontmatter.title}
             </div>
 
             <div className={`${styles.subtitle} ${styles.mosubtitle}`}>
-            {sitedata[4].frontmatter.subtitle}
+            {sitedata[3].frontmatter.subtitle}
             </div>
 
             <div className={`${styles.parasSymp} ${styles.moparasSymp}`}>
-            {sitedata[4].frontmatter.paragraph}
+            {sitedata[3].frontmatter.paragraph}
             </div>
 
             <div style={{
@@ -223,9 +223,9 @@ export default function index({ data }) {
 
           <div className={styles.precautionBox1}>
 
-              <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[2].frontmatter.title}</div>
-              <div className={styles.subtitle}>{sitedata[2].frontmatter.subtitle}</div>
-              <div className={styles.paras}>{sitedata[2].frontmatter.paragraph}</div>
+              <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[4].frontmatter.title}</div>
+              <div className={styles.subtitle}>{sitedata[4].frontmatter.subtitle}</div>
+              <div className={styles.paras}>{sitedata[4].frontmatter.paragraph}</div>
 
           </div>
 
