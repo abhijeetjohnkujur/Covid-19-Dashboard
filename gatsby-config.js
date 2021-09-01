@@ -18,6 +18,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sitebook2`,
+        path: `${__dirname}/src/sitebook2/`,
+      },
+    },
   ],
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Red+Hat+Display:wght@700&display=swap');
 
+
+
 .headerFont
 {
     font-family: 'Red Hat Display';
@@ -78,7 +80,41 @@
 {
     margin-left:15.3em;
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     align-items: center;
     justify-content: center;
+}
+
+/*For mobile screen sizes*/
+
+@media (min-width: 280px) and (max-width:800px)
+
+{
+
+    .navigatorBox
+    {
+        display: none;
+        /*border: 2px solid black;*/
+        flex-direction: column;
+        width: 50%;
+        
+    }    
+    
+
+    .headbox
+{
+    margin-left:2%;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.coronalogoheader
+{
+    width: 10vw;
+    
+}
+    
+    
 }

@@ -1,4 +1,4 @@
-
+ /* eslint-disable */
 import React from 'react'
 import Layout from '../components/Layout'
 import '../styles/global.css'
@@ -7,9 +7,10 @@ import * as styles from '../styles/landing.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function index({ data }) {
-  console.log(data)
+ 
+  // console.log(data)
   const sitedata = data.allMarkdownRemark.nodes
-  console.log(sitedata[1].frontmatter.subtitle)
+  // console.log(sitedata[1].frontmatter.subtitle)
   return (
     <Layout>
     
@@ -36,6 +37,7 @@ export default function index({ data }) {
           src="../images/corona_virus_side.svg"
           quality="100"
           alt="corona_virus"
+          className={styles.landingCorona}
           />
       </div>
       <div className={styles.picdata2}>
@@ -43,6 +45,7 @@ export default function index({ data }) {
           src="../images/girl_sofa.svg"
           quality="100"
           alt="girl sofa"
+          
           />
       </div>
       <div className={styles.picdata3}>
@@ -61,24 +64,21 @@ export default function index({ data }) {
 
     {/* This is the 2nd container which contains the corona information in a flexbox format */}
 
+    
     <div className={styles.secondMain}>
 
       {/* left column containing image */}
 
       <div className={styles.leftImage}>
 
-        <div className={styles.leftImage1}>
+        <div>
         <StaticImage 
-        src="../images/corona_bubble.svg"
-        alt="corona_bubble"
+        src="../images/bubble_color_corona.svg"
+        alt="bubble_color_corona"
+        className={styles.coronacolorbubble}
         />
         </div>
-        <div className={styles.leftImage2}>
-        <StaticImage 
-        src="../images/corona_color.svg"
-        alt="corona_color"
-        />
-        </div>
+        
         
       </div>
 
@@ -98,8 +98,9 @@ export default function index({ data }) {
 
       <div className={styles.coronaLight}>
       <StaticImage 
-          src="../images/corona_light_half.svg"
+          src="../images/corona_light_pink_half.svg"
           alt="Corona Light"
+          className={styles.coronaLightimage}
           />
 
       </div>
@@ -109,11 +110,11 @@ export default function index({ data }) {
 
     {/* This is the 3rd container which contains the contagion information in a flexbox format */}
 
-     <div className={styles.contaParent}>
+     <div className={styles.contaParent} >
 
         <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[0].frontmatter.title}</div>
         <div  className={styles.subtitle} >{sitedata[0].frontmatter.subtitle}</div>
-        <div className={styles.paras} style={{marginBottom:'3em',marginLeft:'2em'}}>{sitedata[0].frontmatter.paragraph}</div>
+        <div className={styles.parasConta}>{sitedata[0].frontmatter.paragraph}</div>
 
         <div className={styles.contaCards}>
           <div className={styles.contaCards1} style={{ borderBottom: '6px solid #FA5652'}}>
@@ -124,28 +125,10 @@ export default function index({ data }) {
             quality="100"
             />
             </div>
-            <div style={{
-            color: 'rgba(3,87,85,1)',
-            fontFamily: 'Helvetica',
-            fontWeight: '600',
-            fontSize: '1.2vw',
-            marginTop:'2em',
-            width: '12vw',
-            border: '2px solid black',
-            textAlign: 'center'
-            
-          }}>
+            <div className={styles.contacardTitle}>
             Air Transmission
             </div>
-            <div style={{
-              color: 'rgba(75,79,81,1)',
-              fontSize: '1.1vw',
-              fontStyle: 'Helvetica',
-              lineHeight: '1.6',
-              border: '2px solid black',
-              marginTop: '3em',
-             fontWeight: '400'
-            }}>
+            <div className={styles.contacarddetail}>
                   Objectively Evolve Tatical Expertise Before
                   Extensible Initiatives. Efficiently Simplyify
             </div>
@@ -161,29 +144,11 @@ export default function index({ data }) {
              
               />
             </div>
-            <div style={{
-            color: 'rgba(3,87,85,1)',
-            fontFamily: 'Helvetica',
-            fontWeight: '600',
-            fontSize: '1.2vw',
-            marginTop:'2em',
-            width: '12vw',
-            border: '2px solid black',
-            textAlign: 'center'
-            
-          }}>
+            <div className={styles.contacardTitle}>
             Human Contacts
             </div>
 
-            <div style={{
-              color: 'rgba(75,79,81,1)',
-              fontSize: '1.1vw',
-              fontStyle: 'Helvetica',
-              lineHeight: '1.6',
-              border: '2px solid black',
-              marginTop: '3em',
-             fontWeight: '400'
-            }}>
+            <div className={styles.contacarddetail}>
                   Washing Your Hands Is One Of The simplest Ways You Can Protect
             </div>
           </div>
@@ -197,28 +162,10 @@ export default function index({ data }) {
             quality="100"
             />
             </div>
-            <div style={{
-            color: 'rgba(3,87,85,1)',
-            fontFamily: 'Helvetica',
-            fontWeight: '600',
-            fontSize: '1.2vw',
-            marginTop:'2em',
-            width: '12vw',
-            border: '2px solid black',
-            textAlign: 'center'
-            
-          }}>
+            <div className={styles.contacardTitle}>
             Contained Objects
             </div>
-            <div style={{
-              color: 'rgba(75,79,81,1)',
-              fontSize: '1.1vw',
-              fontStyle: 'Helvetica',
-              lineHeight: '1.6',
-              border: '2px solid black',
-              marginTop: '3em',
-             fontWeight: '400'
-            }}>
+            <div className={styles.contacarddetail}>
                   Use The Tissue While Sneezing,In This Way, You
                   Can Protect Your Droplets.
             </div>
@@ -236,6 +183,368 @@ export default function index({ data }) {
               />
         </div>
      </div>
+
+    {/* This is the 4th container which contains the symptoms information in a flexbox format */}
+
+    <div className={styles.sympparent}>
+
+            <div className={`${styles.titles}  ${styles.motitles}`} style={{marginBottom:'2em'}}>
+            {sitedata[4].frontmatter.title}
+            </div>
+
+            <div className={`${styles.subtitle} ${styles.mosubtitle}`}>
+            {sitedata[4].frontmatter.subtitle}
+            </div>
+
+            <div className={`${styles.parasSymp} ${styles.moparasSymp}`}>
+            {sitedata[4].frontmatter.paragraph}
+            </div>
+
+            <div style={{
+              width:'90vw',
+              
+            }}>
+              <StaticImage
+              src="../images/girlsymptoms.svg"
+              quality="100"
+              className={styles.girlSymp}
+              />
+            </div>
+    </div>
+
+    {/* This is the 5th container which contains the precaution information in a flexbox format */}
+
+    <div className={styles.precautionParent}>
+
+          <div className={styles.precautionBox1}>
+
+              <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[3].frontmatter.title}</div>
+              <div className={styles.subtitle}>{sitedata[3].frontmatter.subtitle}</div>
+              <div className={styles.paras}>{sitedata[3].frontmatter.paragraph}</div>
+
+          </div>
+
+
+          <div className={styles.precautionBox2}> 
+
+              <div style={{
+                // border:'2px solid black',
+                display:'flex',
+                marginTop: '2em',
+                position: 'relative'
+              }} className={styles.pbContainerOne}>
+                
+                {/* Left container containing steps and details in nested flexbox design */}
+                <div style={{
+                  // border:'2px solid black',
+                  display: 'flex',
+                  
+                }} className={styles.precautionboxmob}> 
+                    <div
+                    style={{
+                      marginRight:'1em',
+                      // border: '4px solid green',
+                      height: '10vh',
+                      marginTop: '11%'
+                    }} className={styles.number}
+                    ><StaticImage src="../images/one.svg" /></div>
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      // border: '2px solid black',
+                      width:'40vw',
+                      justifyContent: 'center'
+                      
+                    }} className={styles.precautionContainer}>
+                      <div style={{
+                        color:'rgba(3, 87, 85, 1)',
+                        fontFamily: 'Helvetica',
+                        fontWeight: '600',
+                        fontSize: '2vw',
+                        marginTop: '0.4em'
+                      }} className={styles.precautiontopic}>{sitedata[8].frontmatter.Topic}</div>
+                      <div style={{
+                        color: 'rgba(75, 79, 81, 1)',
+                        fontSize: '0.9vw',
+                        lineHeight: '2',
+                        marginTop: '2em',
+                        
+                      }} className={styles.precautiondetails}>{sitedata[8].frontmatter.Details}</div>
+                    </div>
+                </div>
+
+                {/* Right container containing picture in flexbox container */}
+                <div style={{
+                  width: '20vw'
+                }} className={styles.precautionpic}>
+                      <StaticImage 
+                      src="../images/wear_mask.svg"
+                      quality="100"
+                      />
+                </div>
+
+                  
+              </div>
+
+              <div style={{
+                // border:'2px solid black',
+                display:'flex',
+                marginTop: '2em',
+                flexDirection:'row-reverse'
+              }} className={styles.pbContainertwo}>
+                
+                {/* Left container containing steps and details in nested flexbox design */}
+                <div style={{
+                  // border:'2px solid black',
+                  display: 'flex',
+                  
+                }} className={styles.precautionboxmob}> 
+                    <div
+                    style={{
+                      marginRight:'1em',
+                      height: '10vh',
+                      marginTop: '11%'
+                    }} className={styles.number}
+                    ><StaticImage src="../images/two.svg" /></div>
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      // border: '2px solid black',
+                      width:'40vw',
+                      justifyContent: 'center'
+                    }} className={styles.precautionContainer}>
+                      <div style={{
+                        color:'rgba(3, 87, 85, 1)',
+                        fontFamily: 'Helvetica',
+                        fontWeight: '600',
+                        fontSize: '2vw',
+                        marginTop: '0.4em'
+                      }} className={styles.precautiontopic}>{sitedata[7].frontmatter.Topic}</div>
+                      <div style={{
+                        color: 'rgba(75, 79, 81, 1)',
+                        fontSize: '0.9vw',
+                        lineHeight: '2',
+                        marginTop: '2em',
+                        
+                      }}  className={styles.precautiondetails}>{sitedata[7].frontmatter.Details}</div>
+                    </div>
+                </div>
+
+                {/* Right container containing picture in flexbox container */}
+                <div style={{
+                  width: '20vw'
+                  
+                }} className={styles.precautionpic}>
+                      <StaticImage 
+                      src="../images/wash_hand.svg"
+                      quality="100"
+                      />
+                </div>
+
+              </div>
+
+              <div style={{
+                // border:'2px solid black',
+                display:'flex',
+                marginTop: '2em'
+              }} className={styles.pbContainerOne}>
+                
+                {/* Left container containing steps and details in nested flexbox design */}
+                <div style={{
+                  // border:'2px solid black',
+                  display: 'flex'
+                }} className={styles.precautionboxmob}> 
+                    <div
+                    style={{
+                      marginRight:'1em',
+                      height: '10vh',
+                      marginTop: '11%'
+                    }} className={styles.number}
+                    ><StaticImage src="../images/three.svg" /></div>
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      // border: '2px solid black',
+                      width:'40vw',
+                      justifyContent: 'center'
+                    }} className={styles.precautionContainer}>
+                      <div style={{
+                        color:'rgba(3, 87, 85, 1)',
+                        fontFamily: 'Helvetica',
+                        fontWeight: '600',
+                        fontSize: '2vw',
+                        marginTop: '0.4em'
+                      }} className={styles.precautiontopic}>{sitedata[5].frontmatter.Topic}</div>
+                      <div style={{
+                        color: 'rgba(75, 79, 81, 1)',
+                        fontSize: '0.9vw',
+                        lineHeight: '2',
+                        marginTop: '2em',
+                        
+                      }} className={styles.precautiondetails}>{sitedata[5].frontmatter.Details}</div>
+                    </div>
+                </div>
+
+                {/* Right container containing picture in flexbox container */}
+                <div style={{
+                  width: '20vw'
+                }} className={styles.precautionpic}>
+                      <StaticImage 
+                      src="../images/usenose.svg"
+                      quality="100"
+                      />
+                </div>
+
+              </div>
+
+
+              <div style={{
+                // border:'2px solid black',
+                display:'flex',
+                marginTop: '2em',
+                flexDirection: 'row-reverse',
+                position: 'relative'
+              }} className={styles.pbContainertwo}>
+                
+                {/* Left container containing steps and details in nested flexbox design */}
+                <div style={{
+                  // border:'2px solid black',
+                  display: 'flex'
+                }} className={styles.precautionboxmob}> 
+                    <div
+                    style={{
+                      marginRight:'1em',
+                      height: '10vh',
+                      marginTop: '14%'
+                    }} className={styles.number}
+                    ><StaticImage src="../images/four.svg" /></div>
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      // border: '2px solid black',
+                      width:'40vw',
+                      justifyContent: 'center'
+                    }} className={styles.precautionContainer}>
+                      <div style={{
+                        color:'rgba(3, 87, 85, 1)',
+                        fontFamily: 'Helvetica',
+                        fontWeight: '600',
+                        fontSize: '2vw',
+                        marginTop: '0.4em'
+                      }} className={styles.precautiontopic}>{sitedata[6].frontmatter.Topic}</div>
+                      <div style={{
+                        color: 'rgba(75, 79, 81, 1)',
+                        fontSize: '0.9vw',
+                        lineHeight: '2',
+                        marginTop: '2em',
+                        
+                      }} className={styles.precautiondetails}>{sitedata[6].frontmatter.Details}</div>
+                    </div>
+                </div>
+
+                {/* Right container containing picture in flexbox container */}
+                <div style={{
+                  width: '20vw'
+                }} className={styles.precautionpic}>
+                      <StaticImage 
+                      src="../images/avoidContact.svg"
+                      quality="100"
+                      />
+                </div>
+                
+                
+              </div>
+
+
+
+             
+
+          </div>
+
+           <div style={{
+                    position: 'absolute',
+                   
+                    top:'25%',
+                    // border: '2px solid black',
+                    maxWidth: 'auto'
+                  }} className={styles.mobcorona}>
+                    <StaticImage 
+                      src="../images/greencorona_half.svg"
+                      quality="100"
+                    />
+                  </div>
+
+                  <div style={{
+                    maxWidth: '70vw',
+                    position: 'absolute',
+                    right: '0',
+                    top: '72%'
+                  }} className={styles.mobcorona}>
+                  <StaticImage 
+                  src="../images/greencoronasmall.svg"
+                  quality="100"
+                  />
+                  
+                </div>
+
+                <div style={{
+                    maxWidth: 'auto',
+                    position: 'absolute',
+                    right: '0',
+                    top: '80%'
+                  }} className={styles.mobcorona}>
+                      <StaticImage 
+                  src="../images/corona_Red_half.svg"
+                  quality="100"
+                  />
+                </div> 
+
+    </div>
+
+
+
+{/* Map container */}
+
+<div className={styles.mapContainer}>
+
+<div className={styles.mapBox}>
+      <StaticImage 
+      src="../images/map.svg"
+      className={styles.worldMap}
+      quality="100"
+      />
+
+      <div className={styles.mapwidget}>
+        <StaticImage 
+        src="../images/mapwidget.svg"
+        className={styles.maptool}
+        />
+      </div>
+
+      <div className={styles.mapsearch}>
+        <StaticImage 
+        src="../images/mapsearch.svg"
+        className={styles.mapsearchtool}
+        />
+      </div>
+</div>
+
+    <div className={styles.coronareport}>
+    <StaticImage 
+    src="../images/livereport.svg"
+    className={styles.livereport}
+    
+    />
+
+    <div className={styles.reporttoggle}>
+            
+            <button><StaticImage src="../images/left.svg"/></button> 
+            <StaticImage src="../images/line.svg"/> 
+            <button><StaticImage src="../images/right.svg"/></button>
+    </div>
+  </div>
+
+</div>
     </Layout>
   )
 }
@@ -247,6 +556,8 @@ query MyQuery {
   allMarkdownRemark {
     nodes {
       frontmatter {
+        Details
+        Topic
         title
         subtitle
         paragraph
