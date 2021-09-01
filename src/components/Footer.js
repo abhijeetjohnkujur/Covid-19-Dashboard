@@ -44,17 +44,17 @@ export default function Footer() {
                     </div>
                     
                     <div className={styles.footerLink}>
-                        <div><Link to='/overview' style={{color: 'rgba(0, 64, 46, 1)'}}>Overview</Link></div>
+                        <div><Link to='/' style={{color: 'rgba(0, 64, 46, 1)'}}>Overview</Link></div>
                         <div><Link to='/symptoms' style={{color: 'rgba(0, 64, 46, 1)'}}>Symptoms</Link></div>
                         <div><Link to='/prevention' style={{color: 'rgba(0, 64, 46, 1)'}}>Prevention</Link></div>
                         <div><Link to='/treatment' style={{color: 'rgba(0, 64, 46, 1)'}}>Treatment</Link></div>
                     </div>
 
                     <div className={styles.socialContainer}>
-                        <Link to="facebook.com"><StaticImage src="../images/facebook.svg" className={styles.socialImage}/></Link>
-                        <Link to="/youtube.com"><StaticImage src="../images/youtube.svg" className={styles.socialImage}/></Link>
-                        <Link to="/vimeo.com"><StaticImage src="../images/vimeo.svg" className={styles.socialImage}/></Link>
-                        <Link to="/twitter.com"><StaticImage src="../images/twitter.svg" className={styles.socialImage}/></Link>
+                        <Link to="facebook.com"><StaticImage src="../images/facebook.svg" className={styles.socialImage} alt="facebook Logo"/></Link>
+                        <Link to="/youtube.com"><StaticImage src="../images/youtube.svg" className={styles.socialImage} alt="Youtube Logo"/></Link>
+                        <Link to="/vimeo.com"><StaticImage src="../images/vimeo.svg" className={styles.socialImage} alt="Vimeo Logo"/></Link>
+                        <Link to="/twitter.com"><StaticImage src="../images/twitter.svg" className={styles.socialImage} alt="Twitter Logo"/></Link>
                     </div>
                 </div>
 

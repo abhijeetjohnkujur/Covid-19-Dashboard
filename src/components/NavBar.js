@@ -24,7 +24,7 @@ export default function NavBar() {
 
             <div className={stylesNav.navigatorBox}>
                 <div>
-                <Link to="/childrenPages/" className={stylesNav.navOverview}>Overview</Link>
+                <Link to="/" className={stylesNav.navOverview}>Overview</Link>
                 <div className={stylesNav.overDot}></div>
                 </div>
                 <Link to="/Contagion" className={stylesNav.navLinks}>Contagion</Link>

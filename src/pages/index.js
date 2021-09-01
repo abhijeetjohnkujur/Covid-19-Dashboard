@@ -8,9 +8,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function index({ data }) {
  
-  // console.log(data)
+  console.log(data)
   const sitedata = data.allMarkdownRemark.nodes
-  // console.log(sitedata[1].frontmatter.subtitle)
+  console.log(sitedata[1].frontmatter.subtitle)
   return (
     <Layout>
     
@@ -20,9 +20,9 @@ export default function index({ data }) {
     {/* Left Info */}
       <div className={styles.leftInfo}>
         <div className={styles.leftInfoData}>
-        <div className={styles.title}>{sitedata[1].frontmatter.title}</div>
-        <div className={styles.subtitle}>{sitedata[1].frontmatter.subtitle}</div>
-        <div className={styles.para}>{sitedata[1].frontmatter.paragraph}</div>
+        <div className={styles.title}>{sitedata[3].frontmatter.title}</div>
+        <div className={styles.subtitle}>{sitedata[3].frontmatter.subtitle}</div>
+        <div className={styles.para}>{sitedata[3].frontmatter.paragraph}</div>
         <div className={styles.help}>  
         <Link to="/Help" style={{color:'white'}}>Let Us Help</Link>
         </div>
@@ -123,6 +123,7 @@ export default function index({ data }) {
             src="../images/girl_card.svg"
             className={styles.tst}
             quality="100"
+            alt="girl card"
             />
             </div>
             <div className={styles.contacardTitle}>
@@ -141,7 +142,7 @@ export default function index({ data }) {
               src="../images/handshake_card.svg"
               quality="100"
               className={styles.tst}
-             
+             alt="handshake"
               />
             </div>
             <div className={styles.contacardTitle}>
@@ -160,6 +161,7 @@ export default function index({ data }) {
             src="../images/juice_card.svg"
             className={styles.tst}
             quality="100"
+            alt="juice"
             />
             </div>
             <div className={styles.contacardTitle}>
@@ -175,11 +177,13 @@ export default function index({ data }) {
         <div className={styles.lightcorona}>
               <StaticImage 
               src="../images/corona_light.svg"
+              alt="corona"
               />
         </div>
         <div className={styles.lightdarkcorona}>
               <StaticImage 
               src="../images/lightdarkcorona.svg"
+              alt="corona"
               />
         </div>
      </div>
@@ -208,6 +212,7 @@ export default function index({ data }) {
               src="../images/girlsymptoms.svg"
               quality="100"
               className={styles.girlSymp}
+              alt="girl symptoms"
               />
             </div>
     </div>
@@ -218,9 +223,9 @@ export default function index({ data }) {
 
           <div className={styles.precautionBox1}>
 
-              <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[3].frontmatter.title}</div>
-              <div className={styles.subtitle}>{sitedata[3].frontmatter.subtitle}</div>
-              <div className={styles.paras}>{sitedata[3].frontmatter.paragraph}</div>
+              <div className={styles.titles} style={{marginBottom:'2em'}}>{sitedata[2].frontmatter.title}</div>
+              <div className={styles.subtitle}>{sitedata[2].frontmatter.subtitle}</div>
+              <div className={styles.paras}>{sitedata[2].frontmatter.paragraph}</div>
 
           </div>
 
@@ -247,7 +252,7 @@ export default function index({ data }) {
                       height: '10vh',
                       marginTop: '11%'
                     }} className={styles.number}
-                    ><StaticImage src="../images/one.svg" /></div>
+                    ><StaticImage src="../images/one.svg" alt="one"/></div>
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -280,6 +285,7 @@ export default function index({ data }) {
                       <StaticImage 
                       src="../images/wear_mask.svg"
                       quality="100"
+                      alt="wearmask"
                       />
                 </div>
 
@@ -305,7 +311,7 @@ export default function index({ data }) {
                       height: '10vh',
                       marginTop: '11%'
                     }} className={styles.number}
-                    ><StaticImage src="../images/two.svg" /></div>
+                    ><StaticImage src="../images/two.svg" alt="two"/></div>
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -338,6 +344,7 @@ export default function index({ data }) {
                       <StaticImage 
                       src="../images/wash_hand.svg"
                       quality="100"
+                      alt="washhand"
                       />
                 </div>
 
@@ -360,7 +367,7 @@ export default function index({ data }) {
                       height: '10vh',
                       marginTop: '11%'
                     }} className={styles.number}
-                    ><StaticImage src="../images/three.svg" /></div>
+                    ><StaticImage src="../images/three.svg" alt="three"/></div>
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -392,6 +399,7 @@ export default function index({ data }) {
                       <StaticImage 
                       src="../images/usenose.svg"
                       quality="100"
+                      alt="use nose"
                       />
                 </div>
 
@@ -417,7 +425,7 @@ export default function index({ data }) {
                       height: '10vh',
                       marginTop: '14%'
                     }} className={styles.number}
-                    ><StaticImage src="../images/four.svg" /></div>
+                    ><StaticImage src="../images/four.svg" alt="four"/></div>
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -449,6 +457,7 @@ export default function index({ data }) {
                       <StaticImage 
                       src="../images/avoidContact.svg"
                       quality="100"
+                      alt="avoid contact"
                       />
                 </div>
                 
@@ -471,6 +480,7 @@ export default function index({ data }) {
                     <StaticImage 
                       src="../images/greencorona_half.svg"
                       quality="100"
+                      alt="corona"
                     />
                   </div>
 
@@ -483,6 +493,7 @@ export default function index({ data }) {
                   <StaticImage 
                   src="../images/greencoronasmall.svg"
                   quality="100"
+                  alt="corona small"
                   />
                   
                 </div>
@@ -496,6 +507,7 @@ export default function index({ data }) {
                       <StaticImage 
                   src="../images/corona_Red_half.svg"
                   quality="100"
+                  alt="half red corona"
                   />
                 </div> 
 
@@ -512,12 +524,14 @@ export default function index({ data }) {
       src="../images/map.svg"
       className={styles.worldMap}
       quality="100"
+      alt="world map"
       />
 
       <div className={styles.mapwidget}>
         <StaticImage 
         src="../images/mapwidget.svg"
         className={styles.maptool}
+        alt="map tool"
         />
       </div>
 
@@ -525,6 +539,7 @@ export default function index({ data }) {
         <StaticImage 
         src="../images/mapsearch.svg"
         className={styles.mapsearchtool}
+        alt="map search tool"
         />
       </div>
 </div>
@@ -533,14 +548,14 @@ export default function index({ data }) {
     <StaticImage 
     src="../images/livereport.svg"
     className={styles.livereport}
-    
+    alt="live report image"
     />
 
     <div className={styles.reporttoggle}>
             
-            <button><StaticImage src="../images/left.svg"/></button> 
-            <StaticImage src="../images/line.svg"/> 
-            <button><StaticImage src="../images/right.svg"/></button>
+            <button><StaticImage src="../images/left.svg" alt="left arrow"/></button> 
+            <StaticImage src="../images/line.svg" alt="vertical line"/> 
+            <button><StaticImage src="../images/right.svg" alt="right arrow"/></button>
     </div>
   </div>
 
