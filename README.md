@@ -51,37 +51,46 @@
 
   <h2 id="flow">Basic Flow Diagram/Folder structure</h2>
 
-  <img src="../covid-19-dashboard/src/screenshots/folder_structure.png" alt="folder structure"></img>
+  ![](src/screenshots/folder_structure.png)
   <h6>The site assets contains different images in svg format and also the information regarding site such as contagion, precautions, overview all in .md files. All images are in <i>src/images</i> folder and information regarding covid 19 are saved in two folders <i>sitebook1 and sitebook2</i> in src folder. </h6>
   <hr />
   
 <h2 id="ss">Screenshots</h2>
 
 <li><b>Console Output</b></li>
-<img src="../covid-19-dashboard/src/screenshots/console.png"></img>
+
+![](src/screenshots/console.png)
 
 <br/>
 <br/>
 <li><b>Landing page on desktop</b></li>
-<img src="../covid-19-dashboard/src/screenshots/landing.png"></img>
+
+![](src/screenshots/landing.png)
 <br />
 <br />
 <li><b>Error page Output</b></li>
-<img src="../covid-19-dashboard/src/screenshots/error404.png"></img>
+
+![](src/screenshots/error404.png)
+
 <br />
 <br />
 <li><b>Landing Page on mobile screen</b></li>
-<img src="../covid-19-dashboard/src/screenshots/mobile.png"></img>
+
+![](src/screenshots/mobile.png)
 <br />
 <br />
 <li><b>Landing Page on tablet screen</b></li>
-<img src="../covid-19-dashboard/src/screenshots/ipad.png"></img>
+
+![](src/screenshots/ipad.png)
 
 <hr />
 
 
 <h2 id="output">Output Video</h2>
-<a href="https://youtu.be/-YIXTJyaxYU" title="Link Title"><img src="../covid-19-dashboard/src/screenshots/covid_landing.png" alt="Alternate Text" /></a>
+<a href="https://youtu.be/-YIXTJyaxYU" title="Link Title">
+
+![](src/screenshots/covid_landing.png)
+</a>
 <b>Click on the above image to open the video</b>
 
 <hr />
